@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Joab Amos D. Viado">
+    <title>Joab</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap"
+        rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="#">JOAB</a>JOAB</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#pieces">Pieces</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button onclick="darkMode()" id="darkButton">go dark/bright</button>
+        <div id="already-in-cart"></div>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Step into JOAB, where the intersection of style and comfort creates a canvas for making a
+                fashion statement. Founded in 1994, our brand firmly believe that your attire speaks volumes about your
+                distinctive personality, and we are dedicated to assisting you in expressing yourself eloquently without
+                uttering a single word. <br><br>
+
+                Our fervor for fashion resonates through our meticulously curated clothing collection. Ranging from the
+                latest trends to enduring classics, we endeavor to present a diverse array of styles suitable for every
+                taste and occasion. Whether you seek casual wear for a relaxed weekend, sophisticated ensembles for the
+                office, or eye-catching outfits for a night out, we've got you covered. <br><br>
+
+                Quality forms the nucleus of our ethos. We meticulously select fabrics from the most esteemed mills,
+                ensuring that each piece is not only fashionable but also exudes comfort and durability. Our commitment
+                to quality surpasses the materials used, extending to the artistry poured into every stitch. Each
+                garment stands as a testament to our unwavering dedication to providing clothing that withstands the
+                passage of time. <br><br>
+
+                At JOAB, the shopping experience transcends merely finding the perfect outfit; it's an
+                immersion in exceptional service. Our team is poised to assist you in crafting looks that mirror your
+                individuality. Whether you seek styling guidance or assistance with sizing, we are always prepared to go
+                above and beyond to guarantee your satisfaction.
+            </p>
+            <!--Male model image: https://i0.wp.com/fashionablymale.net/wp-content/uploads/2017/01/zara-ss17-campaign-2.jpg?resize=900%2C1133&ssl=1-->
+            <img id="model" src="images/model.png" alt="black and white photo of male model wearing all black">
+        </section>
+        <section id="pieces">
+            <h2>Pieces</h2>
+            <section id="tops">
+                <h3>Tops</h3>
+                <!-- ALL of the product images are taken out of https://www2.hm.com/en_us/men/products/view-all.html-->
+                <div class="garments">
+                    <article class="item">
+                        <img class="item-image" src="images/shirt1.jpg" alt="black long-sleeve shirt">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Noir</b></h4>
+                            <p>Timeless piece for dates.</p>
+                            <p class="price">459.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/shirt2.jpg" alt="snakeskin print long-sleeve shirt">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Venom</b></h4>
+                            <p>Fit for a Bond villain.</p>
+                            <p class="price">659.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/shirt3.jpg" alt="navy long-sleeve shirt">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Lone Wolf</b></h4>
+                            <p>Look like the main character.</p>
+                            <p class="price">459.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/shirt4.jpg"
+                            alt="black long-sleeve shirt with white flowers">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Romatic</b></h4>
+                            <p>Looks great with a vape pen and a Nissan Altima.</p>
+                            <p class="price">559.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/shirt5.jpg" alt="light green long-sleeve shirt">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Father</b></h4>
+                            <p>Respectable and honest.</p>
+                            <p class="price">459.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/shirt6.jpg"
+                            alt="green and white banana leaves print short-sleeve shirt">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Resort</b></h4>
+                            <p>You'll only wear this for two weeks this year.</p>
+                            <p class="price">359.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="bottoms">
+                <h3>Bottoms</h3>
+                <div class="garments">
+                    <article class="item">
+                        <img class="item-image" src="images/pants1.jpg" alt="black trousers">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Trouser</b></h4>
+                            <p>A classic piece for dates and waiters.</p>
+                            <p class="price">459.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/pants2.jpg" alt="square patterned grey trousers">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Pantaloon</b></h4>
+                            <p>The Peaky Blinders called.</p>
+                            <p class="price">559.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/pants3.jpg" alt="beige trousers">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Boston Cream</b></h4>
+                            <p>Backstreet's back alright.</p>
+                            <p class="price">359.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/pants4.jpg" alt="grey chinos">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Dev</b></h4>
+                            <p>A frontend classic.</p>
+                            <p class="price">459.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/pants5.jpg" alt="navy trousers">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Wallstreet</b></h4>
+                            <p>"Sell me this pen."</p>
+                            <p class="price">459.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/pants6.jpg" alt="grey patterned trousers">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Sharp Dresser</b></h4>
+                            <p>Look okay, feel great.</p>
+                            <p class="price">559.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section id="outerwear">
+                <h3>Outerwear</h3>
+                <div class="garments">
+                    <article class="item">
+                        <img class="item-image" src="images/outerwear1.jpg" alt="brown long coat">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Joe Pesci</b></h4>
+                            <p>Look like a Home Alone villain.</p>
+                            <p class="price">4259.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/outerwear2.jpg" alt="caramel long coat">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Sinatra</b></h4>
+                            <p>"I've got the world on a string..."</p>
+                            <p class="price">4259.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/outerwear3.jpg" alt="black motorcycle jacket">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Brando</b></h4>
+                            <p>Your classic Schott-style jacket.</p>
+                            <p class="price">4899.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/outerwear4.jpg" alt="black jean jacket">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Hipster</b></h4>
+                            <p>Cold brews and handlebar mustaches.</p>
+                            <p class="price">2449.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/outerwear5.jpg" alt="white sherpa jacket">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Sheep</b></h4>
+                            <p>Baaaaaaaaaaaa.</p>
+                            <p class="price">4299.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                    <article class="item">
+                        <img class="item-image" src="images/outerwear6.jpg" alt="brown fur jacket">
+                        <div class="container">
+                            <h4 class="item-name"><b>The Fur</b></h4>
+                            <p>The 70's called.</p>
+                            <p class="price">4369.00 USD</p>
+                            <button class="add-to-cart">Add to cart</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </section>
+        <section id="lower-content">
+            <h2 id="hide-this">lower content</h2>
+            <section id="cart">
+                <h3>Your Cart</h3>
+                <table id="table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody class="added-items" id="added-items">
+                        <!-- new shop items will be added here when it's added to the cart -->
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td>Your Total</td>
+                            <td id="cart-total"></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <button onclick="placeOrder()" id="purchase">Place Order</button>
+                <span id="order-message"></span>
+
+            </section>
+            <section id="contact">
+                <h3>Contact</h3>
+                <form id="form" method="POST">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+
+
+                    <label for="phone">Phone:</label>
+                    <input id="phone" maxlength="15" type="tel" pattern="\d{10}" placeholder="1234567890">
+                    <span class="error-message"></span>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                    <span class="error-message"></span>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method</legend>
+                        <input type="radio" name="contact" value="phone" required>
+                        <label for="phone">Phone</label>
+                        <input type="radio" name="contact" value="email">
+                        <label for="email">Email</label>
+                    </fieldset>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    <span class="error-message"></span>
+
+                    <input type="submit" id="submit" value="Submit">
+                    <div id="submit-message"></div>
+                </form>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <small> Copyright &copy; 2023 Joab Inc.</small>
+    </footer>
+</body>
+
+</html>
